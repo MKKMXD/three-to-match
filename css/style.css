@@ -1,0 +1,26 @@
+.pulse-btn {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ff4757;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 20px rgba(255, 71, 87, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
+}
+
+#answer {
+  filter: blur(8px);      /* размытый по умолчанию */
+  transition: filter 0.5s ease;
+  cursor: pointer;         /* курсор указывает на интерактивность */
+}
+
+#answer.visible {
+  filter: blur(0);        /* показывает ответ */
+}
