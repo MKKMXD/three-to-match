@@ -50,7 +50,7 @@ document.getElementById("btnClearPlayers").addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", async () => {
   // Инициализация JSON вопросов
-  await initStorage("/assets/data/data.json");
+  await initStorage("./assets/data/data.json");
 
   // Кнопка игры
   btn.addEventListener("click", () => {
